@@ -3,14 +3,14 @@
 
 namespace TaxCalculator
 {
-    public class Tax : ITax
+    public class Tax : ITax, IMedicare, ISuperannuation
     {
         // Due to finding out late that I need to do this app for interview, I did not use a abstract class.
         // My idea was to abstractise the class so that we could use the methods in other classes, and we could expand functionality
         // separate concerns and extend it if income rules change. 
 
 
-        private readonly  double LowBracket = 19;
+        private readonly double LowBracket = 19;
         private readonly double MediumBracket = 32.5;
         private readonly double HighBracket = 37;
         private readonly double LuxBracket = 47;

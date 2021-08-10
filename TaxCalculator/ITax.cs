@@ -13,10 +13,6 @@ namespace TaxCalculator
 
         public double TaxCal(double input);
 
-        public double Superannuation(double input);
-
-        public double Medicare(double input);
-
         public double BudgetRepair(double input);
 
         public double PayFrequency(double input, string w);
